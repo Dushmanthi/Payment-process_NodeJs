@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Payment store</title>
+    </head>
+
+    <body>
+        <form action="/charge" method="post">
+        <script
+            src="https://checkout.stripe.com/checkout.js"
+            class="stripe-button"
+            data-key="pk_test_fQRQ8D0byRBCHs3sZNX7tani"
+            data-amount="30000"
+            data-name="book item"
+            data-description="this is upgrate book level"
+            dara-locale="auto"
+            data-currency="usd"
+        >
+        </script>
+        <input type="hidden" name="chargeAmount" value="30000">
+        </form>
+    </body>
+</html>
